@@ -188,6 +188,8 @@ img:hover{
         max-width: 300px;
         height: auto;
         flex-shrink: 0;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.644);
+
     }
 
     .lista::-webkit-scrollbar {
@@ -220,7 +222,7 @@ img:hover{
     .texto{
         width: 90%;
         font-size: 25px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
 
 
     }
