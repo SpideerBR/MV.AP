@@ -188,7 +188,7 @@ img:hover{
         max-width: 300px;
         height: auto;
         flex-shrink: 0;
-        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.644);
+        box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.644);
 
     }
 
@@ -223,8 +223,6 @@ img:hover{
         width: 90%;
         font-size: 25px;
         margin-bottom: 10px;
-
-
     }
     
 }
