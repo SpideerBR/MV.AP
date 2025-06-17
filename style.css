@@ -178,7 +178,7 @@ img:hover{
     }
 
     .imagem {
-        padding-left: 35px;
+        padding-left: 55px;
         flex: 0 0 auto;
         scroll-snap-align: start;
     }
