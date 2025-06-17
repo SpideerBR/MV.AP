@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&family=Titillium+Web:wght@400;600;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    outline: 2px solid red;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(imagens/wpp3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+  font-family: 'Send Flowers', cursive;
+  font-size: 35px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  margin-top: 5px;
+}
+
+.slider{
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px 10px;
+}
+
+.lista img{
+    width: 250px;
+    max-width: 100vw;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+img{
+    transition: transform 0.3s ease ;
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+
+.contador{
+    background-color: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 7px;
+    width: 90%;
+    max-width: 1120px;
+    padding: 10px;
+    height: 200px;
+    font-size: 30px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.contador div{
+    background-color: rgba(4, 0, 255, 0.171);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+    transition: transform 0.3s ease ;
+
+}
+
+.contador div:hover{
+    transform: scale(1.03);
+}
+
+
+.contador span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.contador span.numero{
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;}
+
+.contador span.tempo{
+    font-size: 20px;
+}
+
+.texto{
+    font-family: "Send Flowers", cursive;
+    font-size: 35px;
+    color: #d8a7a7;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 10px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+@media (max-width: 768px) {
+    .contador {
+        font-size: 20px;
+        height: auto;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .contador div {
+        width: 130px;
+        height: 130px;
+    }
+
+    .contador span {
+        font-size: 40px;
+    }
+
+    .contador span.tempo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body{
+        background-image: url(imagens/wpp1.png);
+
+    }
+
+    .slider {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .lista {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
+    }
+
+    .imagem {
+        padding-left: 85px;
+        padding-right: 85px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .lista img {
+        width: 80vw;
+        max-width: 300px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .lista::-webkit-scrollbar {
+        display: none; /* oculta a barra de rolagem no Chrome */
+    }
+
+
+
+    .contador {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 73%;
+    }
+
+    .contador div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contador span {
+        font-size: 40px;
+    }
+
+    .contador span.tempo {
+        font-size: 14px;
+    }
+
+    .texto{
+        width: 90%;
+        font-size: 25px;
+        margin-bottom: 5px;
+
+
+    }
+    
+}
