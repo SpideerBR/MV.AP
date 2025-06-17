@@ -171,15 +171,14 @@ img:hover{
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
-        gap: 10px;
+        gap: 100px;
         padding: 10px;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
     }
 
     .imagem {
-        padding-left: 85px;
-        padding-right: 85px;
+        padding-left: 35px;
         flex: 0 0 auto;
         scroll-snap-align: start;
     }
